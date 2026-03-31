@@ -12,3 +12,4 @@ class Todo(TodoBase):
     id: int
     class Config:
         from_attributes = True
+
