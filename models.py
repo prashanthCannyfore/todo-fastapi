@@ -7,3 +7,10 @@ class Todo(Base):
     title = Column(String, nullable=False)
     description = Column(String)
     completed = Column(Boolean, default=False)
+
+
+class File(Base):
+    __tablename__ = "files"
+
+    id = Column(Integer, primary_key=True, index=True)
+    filename = Column(String)
